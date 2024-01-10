@@ -1,0 +1,716 @@
+.dividerLine {
+  border: 1px solid transparent;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+  content: "";
+}
+
+@media (max-width: 775px) {
+  .main {
+    padding: 0rem;
+  }
+}
+
+.twoColumnGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.proExpBtn {
+  border: 1px solid var(--primary-border-color);
+  border-radius: 15px;
+  padding: 2rem;
+  font-size: 2.5rem;
+  width: 85%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.proExpLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 850px) {
+  .proExpBtn {
+    padding: 1.25rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 750px) {
+  .proExpBtn {
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  .proExpBtn {
+    padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 480px) {
+  .proExpBtn {
+    font-size: 1rem;
+  }
+  .twoColumnGrid {
+    gap: 0.5rem;
+  }
+}
+
+.proExpBtn:first-child {
+  margin-top: 0rem;
+}
+
+.proExpVis {
+  transition-delay: 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+  width: 40%;
+}
+@media (max-width: 375px) {
+  .proExpVis {
+    width: 50%;
+  }
+  .proExpBodyHead {
+    font-size: 0.7rem;
+    margin-left: 0;
+    padding-left: 0;
+    transform: translateX(-0.5rem);
+  }
+}
+.proExpHid {
+  transition: all 0.5s;
+  display: none;
+}
+.proExpVis1 {
+  transition: all 0.5s;
+  display: none;
+}
+
+.proExpBtnSelected {
+  background-color: #e01a4f;
+  box-shadow: 6px 6px 2px 0px rgba(56, 56, 56, 0.75);
+  transform: scaleX(1.1) scaleY(1.1) scaleZ(2) rotateX(0deg) rotateY(-18deg)
+    rotateZ(0deg) translateX(-3px) translateY(-3px) translateZ(0px) skewX(0deg)
+    skewY(0deg);
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  transition: all 0.5s;
+}
+
+.proExpHeader {
+  font-size: 2.5rem;
+  margin: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.proExpBody {
+  font-weight: 100;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+.proExpBodyHead {
+  font-weight: 300;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+  color: #e01a4f;
+}
+
+@media (max-width: 850px) {
+  .proExpHeader {
+    font-size: 1.75rem;
+    margin: 0.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .proExpBody {
+    font-size: 0.8rem;
+  }
+  .proExpBullet li {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 550px) {
+  .proExpHeader {
+    font-size: 1.55rem;
+    margin: 0.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .proExpBody {
+    font-size: 0.7rem;
+  }
+  .proExpBullet li {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 480px) {
+  .proExpHeader {
+    font-size: 1.25rem;
+    margin: 0.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .proExpBody {
+    font-size: 0.55rem;
+  }
+  .proExpBullet li {
+    font-size: 0.55rem;
+  }
+}
+@media (max-width: 370px) {
+  .proExpHeader {
+    font-size: 1rem;
+    margin: 0rem;
+    margin-bottom: 0.5rem;
+    padding: 0;
+  }
+
+  .proExpBody {
+    font-size: 0.5rem;
+    margin-left: 0;
+    width: 100%;
+    padding-right: 0.5rem;
+  }
+
+  .proExpBullet li {
+    font-size: 0.5rem;
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+.proExpBodyGrid {
+  margin: 0.5rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.bodyGrid3x3 {
+  margin: 0.5rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.photoItem {
+  margin: 0.5rem;
+  object-fit: cover;
+  height: 95%;
+  width: 95%;
+
+  transition: all 0.5s;
+}
+/* .photoItem:hover {
+  object-fit: cover;
+  height: 150%;
+  width: 150%;
+  transition: all 0.5s;
+} */
+.expItem {
+  margin: 0.5rem;
+}
+
+.proExpBullet {
+  font-weight: 100;
+  padding-left: 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+.card {
+  border: 1px solid white;
+  margin: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 1rem;
+  height: 18rem;
+  border: 1px solid var(--primary-border-color);
+  border-radius: 15px;
+  position: absolute;
+  /* left: 1rem; */
+  width: 77.5%;
+}
+.cardHidden {
+  display: none;
+}
+@media (max-width: 850px) {
+  .card {
+    border: 1px solid white;
+    margin: 1rem;
+    gap: 1rem;
+    padding: 0.75rem;
+    height: 19rem;
+    width: 77.5%;
+  }
+}
+@media (max-width: 875px) {
+  .card {
+    border: 1px solid white;
+    margin: 1rem;
+    gap: 1rem;
+    padding: 0.75rem;
+    padding-bottom: 1.25rem;
+    height: 19rem;
+    width: 75.5%;
+  }
+}
+@media (max-width: 775px) {
+  .card {
+    border: 1px solid white;
+    margin: 1rem;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    padding-bottom: 1.25rem;
+    height: 18rem;
+    width: 72.5%;
+  }
+}
+@media (max-width: 775px) {
+  .card {
+    width: 85%;
+    height: 18rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .card {
+    width: 80%;
+    height: 18rem;
+  }
+}
+@media (max-width: 450px) {
+  .card {
+    height: 20rem;
+  }
+}
+
+@media (max-width: 775px) {
+  .cardImage {
+    object-fit: contain;
+  }
+}
+@media (max-width: 775px) {
+  .cardBtn {
+    padding: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.cardLeft {
+  text-align: center;
+  align-self: center;
+  font-size: 3rem;
+  border-right: 1px solid #e01a4f;
+  height: 75%;
+  padding: 0.5rem;
+}
+
+.cardHeader {
+  font-size: 1.25rem;
+  margin: 0.5rem;
+  border-bottom: 1px solid #e01a4f;
+  width: 50%;
+  padding-bottom: 0.5rem;
+}
+.cardSubHead {
+  font-size: 1.05rem;
+  margin: 0.5rem;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.cardBody {
+  font-weight: 100;
+  margin: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.cardBullet {
+  font-weight: 100;
+  padding-left: 1rem;
+  margin: 0.5rem;
+  font-size: 0.85rem;
+}
+@media (max-width: 775px) {
+  .cardHeader {
+    font-size: 1.1rem;
+  }
+  .cardSubHead {
+    font-size: 1rem;
+  }
+  .cardBody {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 615px) {
+  .cardHeader {
+    font-size: 1rem;
+  }
+  .cardSubHead {
+    font-size: 0.8rem;
+  }
+  .cardBody {
+    font-size: 0.65rem;
+  }
+}
+@media (max-width: 375px) {
+  .cardHeader {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .cardSubHead {
+    font-size: 0.7rem;
+  }
+  .cardBody {
+    font-size: 0.55rem;
+  }
+}
+@media (max-width: 390px) {
+  .card {
+    width: 75%;
+    height: 19rem;
+  }
+  .cardBody {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 375px) {
+  .card {
+    width: 87.5%;
+    height: 19rem;
+  }
+}
+
+.cardBtnContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1rem;
+  margin-left: 0.5rem;
+}
+.cardBtn {
+  background-color: #e01a4f;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.cardBtn:hover {
+  cursor: pointer;
+  color: #202020;
+  transition: all 0.5s;
+}
+.colorTextHead {
+  font-variant: small-caps;
+  color: #e01a4f;
+  size: 1rem;
+}
+
+.headerText {
+  font-size: 4rem;
+  margin-bottom: 6rem;
+}
+@media (max-width: 850px) {
+  .headerText {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 750px) {
+  .cardContainer {
+    height: 28rem;
+  }
+}
+@media (max-width: 375px) {
+  .headerText {
+    font-size: 3rem;
+  }
+}
+
+.cardContainer {
+  background-color: #202020;
+  border: 1px solid var(--primary-border-color);
+  border-radius: 15px;
+  height: 25rem;
+}
+.cardNav {
+  height: 10%;
+  text-align: right;
+  padding: 0.5rem;
+  background-color: #202020;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.arrowDivider {
+  height: 20rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5rem;
+  margin-top: 4rem;
+}
+.arrowDividerPerLife {
+  height: 20rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5rem;
+  margin-top: 4rem;
+}
+.arrowDividerAppExp {
+  height: 20rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5rem;
+  margin-top: 4rem;
+}
+
+.svgDownArrow {
+  z-index: 1;
+  background-color: transparent;
+  position: absolute;
+  width: 35%;
+  height: 60%;
+  right: 20%;
+  transform: rotate(-25deg) translate(-2rem, -8rem);
+}
+.svgDownArrowFlipped {
+  z-index: 1;
+  background-color: transparent;
+  position: absolute;
+  width: 35%;
+  height: 60%;
+  left: 10%;
+  transform: rotate(85deg) translate(-10rem, -2rem) scaleX(-1);
+}
+.svgLoopDown {
+  z-index: 1;
+  background-color: transparent;
+  position: absolute;
+  width: 40%;
+  height: 45%;
+  right: 20%;
+  transform: rotate(5deg) translate(-12rem, -8rem) scaleX(-1);
+}
+@media (max-width: 750px) {
+  .arrowDivider {
+    height: 20rem;
+  }
+  .arrowDividerAppExp {
+    height: 20rem;
+    background-color: transparent;
+  }
+  .arrowDividerPerLife {
+    height: 20rem;
+    background-color: transparent;
+  }
+  .svgLoopDown {
+    width: 30%;
+    height: 38%;
+  }
+}
+@media (max-width: 375px) {
+  .arrowDividerPerLife {
+    background-color: transparent;
+    transform: translate(2rem, -8rem);
+  }
+}
+@media (max-width: 450px) {
+  .arrowDividerAppExp {
+    height: 10rem;
+    transform: translate(2rem, 4rem);
+    background-color: transparent;
+  }
+}
+@media (max-width: 375px) {
+  .arrowDividerAppExp {
+    height: 10rem;
+    transform: translate(2rem, -2rem);
+    background-color: transparent;
+  }
+}
+@media (max-width: 375px) {
+  .appExpContainer {
+    transform: translateY(-7rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .perLifeContainer {
+    transform: translate(-0, -8rem);
+  }
+}
+@media (max-width: 600px) {
+  .proExpBodyHead {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 450px) {
+  .perLifeContainer {
+    transform: translate(-0, -8rem);
+  }
+}
+@media (max-width: 390px) {
+  .proExpRight {
+    padding: 0;
+  }
+  .proExpBody {
+    width: 110%;
+    margin-right: 0rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .perLifeContainer {
+    transform: translate(-0, -25rem);
+  }
+}
+@media (max-width: 390px) {
+  .contactArrow {
+    transform: translate(-0, -10rem);
+    background-color: transparent;
+  }
+}
+@media (max-width: 375px) {
+  .contactArrow {
+    transform: translate(-0, -32rem);
+  }
+}
+@media (max-width: 390px) {
+  .contactContainer {
+    transform: translate(-0, -20rem);
+  }
+}
+@media (max-width: 375px) {
+  .contactContainer {
+    transform: translate(-0, -40rem);
+  }
+}
+
+@media (max-width: 450px) {
+  .svgDownArrow {
+    transform: scaleX(-1) rotate(-90deg) translate(4rem, 10rem);
+    background-color: transparent;
+  }
+}
+@media (max-width: 450px) {
+  .svgDownArrowFlipped {
+    transform: rotate(85deg) translate(0rem, -2rem) scaleX(-1);
+  }
+}
+
+.circle:hover {
+  cursor: pointer;
+}
+.circleRed {
+  color: #e01a4f;
+}
+
+.cardImgContainer {
+  margin: 0.25rem;
+}
+
+.cardImage {
+  width: 100%;
+  height: 80%;
+}
+
+/* ============ CONTACT FORM ============== */
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.formInput {
+  background-color: #3f3f3f;
+  height: 2.5rem;
+  border-radius: 5px;
+  border-color: var(--primary-border-color);
+}
+
+.formMessage {
+  background-color: #3f3f3f;
+  border-radius: 5px;
+  height: 10rem;
+  margin-bottom: 2rem;
+  border-color: var(--primary-border-color);
+}
+
+.formSendBtn {
+  background-color: #e01a4f;
+  padding: 1rem;
+  border-radius: 15px;
+  border-color: var(--primary-border-color);
+  font-size: 1rem;
+  transition: 0.5s;
+  color: var(--primary-text-color);
+  width: 30%;
+}
+
+.formSendBtn:hover {
+  cursor: pointer;
+  color: black;
+  transition: 0.5s;
+}
+
+@media (max-width: 550px) {
+  .formSendBtn {
+    width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .formLabel {
+    font-size: 1.1rem;
+
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .formInput {
+    background-color: #3f3f3f;
+    height: 2rem;
+    border-radius: 5px;
+    border-color: var(--primary-border-color);
+  }
+
+  .formMessage {
+    background-color: #3f3f3f;
+    border-radius: 5px;
+    height: 7rem;
+    margin-bottom: 1rem;
+    border-color: var(--primary-border-color);
+  }
+  .formSendBtn {
+    padding: 0.75rem;
+
+    font-size: 0.8rem;
+  }
+}

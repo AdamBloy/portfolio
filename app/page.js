@@ -1,95 +1,100 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
+import AdamHeroImg from "../photos/adam2.jpg";
+import { ArrowDownward } from "@mui/icons-material";
+import WorkExp from "./components/workExp";
+import { Fragment } from "react";
+import AppExp from "./components/appExp";
+import svgBrush from "../svg/paintstrokecolor.svg";
+import svgDownArrow from "../svg/paintedarrowcolor.svg";
+import PersonalLife from "./components/personalLife";
+import ContactForm from "./components/contactForm";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
+    <Fragment>
+      <main className={styles.main}>
+        <div className={styles.heroheadcontainer}>
+          <div className={styles.lefthero}>
+            <div className={styles.socialsmalltext}>Working with Clients</div>
+            <div className={styles.socialsmalltext}>Problem Solving</div>
+            <div className={styles.socialsmalltext}>Development</div>
+            <div className={styles.socialsmalltext}>Creativity</div>
+            <div className={styles.socialsmalltext}>Design</div>
+            <div className={styles.sociallargetext}></div>
+          </div>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            className={styles.linkReset}
+            href="https://www.linkedin.com/in/adam-b-762a8b238/"
             target="_blank"
-            rel="noopener noreferrer"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+            <div className={styles.linkedinhero}>
+              <div className={styles.socialsmalltext}>Visit my</div>
+              <div className={styles.sociallargetext}>LinkedIn</div>
+            </div>
           </a>
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+        <div className={styles.heroheader}>
+          <div className={styles.heroname}>
+            <Image
+              className={styles.svgPaintBrush1}
+              alt="paintbrush mark"
+              src={svgBrush}
+            ></Image>
+            <div className={styles.firstName}>Adam</div>
+            <Image
+              className={styles.svgPaintBrush2}
+              alt="paintbrush mark"
+              src={svgBrush}
+            ></Image>
+            <div className={styles.lastName}>Bloy</div>
+          </div>
+          <div className={styles.heroimg}>
+            <Image
+              className={styles.heroImgAdam}
+              alt="Image of Adam Bloy"
+              placeholder="blur"
+              src={AdamHeroImg}
+            ></Image>
+          </div>
+        </div>
+        {/* <div className={styles.heroheadcontainerbtm}>
+          <div className={styles.leftherobtm}>
+            <div className={styles.sociallargetextbtm}>More</div>
+            <span class="material-icons-outlined">
+              <ArrowDownward sx={{ fontSize: 80 }} />
+            </span>
+          </div>
+        </div> */}
+        <div className={styles.heroheadcontainerBtm}>
+          {/* <div className={styles.leftherobtm}>
+            <div className={styles.sociallargetextbtm}>Scroll</div>
+            <span className="material-icons-outlined">
+              <ArrowDownward sx={{ fontSize: 80 }} />
+            </span>
+          </div> */}
+          <Image
+            className={styles.svgDownArrow}
+            alt="paintbrush mark"
+            src={svgDownArrow}
+          ></Image>
+          <a className={styles.linkReset} href="mailto:adzm00@googlemail.com">
+            <div className={styles.linkedinhero}>
+              <div className={styles.socialsmalltext}>Contact </div>
+              <div className={styles.sociallargetext}>Email me</div>
+            </div>
+          </a>
+          <div className={styles.linkedinhero1}>
+            <div className={styles.socialsmalltext1}>Check below for</div>
+            <div className={styles.sociallargetext1}>More Info</div>
+          </div>
+        </div>
+        <WorkExp />
+        <AppExp />
+        <PersonalLife />
+        <ContactForm />
+      </main>
+    </Fragment>
+  );
 }
