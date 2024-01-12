@@ -74,11 +74,11 @@ export default function Home() {
               <ArrowDownward sx={{ fontSize: 80 }} />
             </span>
           </div> */}
-          <Image
+          {/* <Image
             className={styles.svgDownArrow}
             alt="paintbrush mark"
             src={svgDownArrow}
-          ></Image>
+          ></Image> */}
           <a className={styles.linkReset} href="mailto:adzm00@googlemail.com">
             <div className={styles.linkedinhero}>
               <div className={styles.socialsmalltext}>Contact </div>

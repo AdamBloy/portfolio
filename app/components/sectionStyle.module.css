@@ -7,12 +7,6 @@
   content: "";
 }
 
-@media (max-width: 775px) {
-  .main {
-    padding: 0rem;
-  }
-}
-
 .twoColumnGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -452,34 +446,12 @@
   font-size: 4rem;
   margin-bottom: 6rem;
 }
-@media (max-width: 850px) {
-  .headerText {
-    font-size: 4rem;
-    margin-bottom: 2rem;
-  }
-}
-@media (max-width: 750px) {
-  .cardContainer {
-    height: 28rem;
-  }
-}
-@media (min-width: 1400px) {
-  .cardContainer {
-    height: 28rem;
-    width: 100%;
-  }
-}
-@media (max-width: 375px) {
-  .headerText {
-    font-size: 3rem;
-  }
-}
 
 .cardContainer {
   background-color: #202020;
   border: 1px solid var(--primary-border-color);
   border-radius: 15px;
-  height: 25rem;
+  height: 30rem;
 }
 .cardNav {
   height: 10%;
@@ -490,28 +462,6 @@
   margin-right: 1rem;
 }
 
-.arrowDivider {
-  height: 20rem;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 5rem;
-  margin-top: 4rem;
-}
-.arrowDividerPerLife {
-  height: 20rem;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 5rem;
-  margin-top: 4rem;
-}
-.arrowDividerAppExp {
-  height: 20rem;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 5rem;
-  margin-top: 4rem;
-}
-
 .svgDownArrow {
   z-index: 1;
   background-color: transparent;
@@ -520,222 +470,6 @@
   height: 60%;
   right: 20%;
   transform: rotate(-25deg) translate(-2rem, -8rem);
-}
-.svgDownArrowFlipped {
-  z-index: 1;
-  background-color: transparent;
-  position: absolute;
-  width: 35%;
-  height: 60%;
-  left: 10%;
-  transform: rotate(85deg) translate(-10rem, -2rem) scaleX(-1);
-}
-.svgLoopDown {
-  z-index: 1;
-  background-color: transparent;
-  position: absolute;
-  width: 40%;
-  height: 45%;
-  right: 20%;
-  transform: rotate(5deg) translate(-12rem, -8rem) scaleX(-1);
-}
-
-@media (min-width: 1650px) {
-  .svgLoopDown {
-    border: 1px solid red;
-    transform: translate(21rem, -8rem);
-  }
-}
-@media (min-width: 1300px) {
-  .svgLoopDown {
-    /* border: 1px solid white; */
-    transform: translate(-1rem, -8rem);
-  }
-}
-@media (min-width: 750px) {
-  .svgLoopDown {
-    width: 20rem;
-    height: 30rem;
-  }
-}
-@media (max-width: 750px) {
-  .arrowDivider {
-    height: 20rem;
-  }
-  .arrowDividerAppExp {
-    height: 20rem;
-    background-color: transparent;
-  }
-  .arrowDividerPerLife {
-    height: 20rem;
-    background-color: transparent;
-  }
-  .svgLoopDown {
-    width: 10rem;
-    height: 20rem;
-  }
-}
-@media (min-width: 410px) {
-  .svgLoopDown {
-    transform: translate(-2rem, -12rem);
-  }
-}
-@media (max-width: 375px) {
-  .arrowDividerPerLife {
-    background-color: transparent;
-    transform: translate(2rem, -8rem);
-  }
-}
-@media (max-width: 450px) {
-  .arrowDividerAppExp {
-    height: 10rem;
-    transform: translate(2rem, 4rem);
-    background-color: transparent;
-  }
-}
-@media (max-width: 375px) {
-  .arrowDividerAppExp {
-    height: 10rem;
-    transform: translate(2rem, -2rem);
-    background-color: transparent;
-  }
-}
-/* @media (min-width: 1050) {
-  .arrowDividerAppExp {
-    transform: scale(50%);
-    border: 1px solid white;
-  }
-} */
-@media (max-width: 375px) {
-  .appExpContainer {
-    transform: translateY(-7rem);
-  }
-}
-
-@media (max-width: 600px) {
-  .perLifeContainer {
-    transform: translate(-0, -8rem);
-  }
-}
-@media (max-width: 600px) {
-  .proExpBodyHead {
-    font-size: 0.8rem;
-  }
-}
-@media (max-width: 450px) {
-  .perLifeContainer {
-    transform: translate(-0, -8rem);
-  }
-}
-@media (max-width: 390px) {
-  .proExpRight {
-    padding: 0;
-  }
-  .proExpBody {
-    width: 110%;
-    margin-right: 0rem;
-  }
-}
-
-@media (max-width: 375px) {
-  .perLifeContainer {
-    transform: translate(-0, -25rem);
-  }
-}
-@media (max-width: 390px) {
-  .contactArrow {
-    transform: translate(-0, -10rem);
-    background-color: transparent;
-  }
-}
-@media (max-width: 375px) {
-  .contactArrow {
-    transform: translate(-0, -32rem);
-  }
-}
-@media (max-width: 390px) {
-  .contactContainer {
-    transform: translate(-0, -20rem);
-  }
-}
-@media (max-width: 375px) {
-  .contactContainer {
-    transform: translate(-0, -40rem);
-  }
-}
-
-@media (max-width: 450px) {
-  .svgDownArrow {
-    transform: scaleX(-1) rotate(-90deg) translate(2rem, 1rem);
-    background-color: transparent;
-    /* border: 5px solid pink; */
-  }
-}
-@media (max-width: 1050px) {
-  .svgDownArrow {
-    transform: rotate(-20deg) translate(2rem, -15rem);
-  }
-}
-@media (min-width: 1050px) {
-  .svgDownArrow {
-    transform: rotate(-20deg) translate(2rem, -8rem);
-  }
-}
-@media (min-width: 1550px) {
-  .svgDownArrow {
-    transform: rotate(-20deg) translate(-12rem, 12rem);
-
-    width: 20%;
-    height: 20%;
-  }
-}
-
-@media (min-width: 1800px) {
-  .svgDownArrow {
-    transform: rotate(-15deg) translate(-10rem, -2rem);
-    width: 25rem;
-    height: 40rem;
-  }
-}
-@media (min-width: 2450px) {
-  .svgDownArrow {
-    transform: rotate(-20deg) translate(-10rem, -12rem);
-    width: 35rem;
-    height: 40rem;
-  }
-}
-@media (min-width: 3000px) {
-  .svgDownArrow {
-    transform: rotate(-20deg) translate(-20rem, -12rem);
-    width: 35rem;
-    height: 40rem;
-  }
-}
-@media (max-width: 450px) {
-  .svgDownArrowFlipped {
-    transform: rotate(85deg) translate(0rem, -2rem) scaleX(-1);
-  }
-}
-/* @media (min-width: 1550px) {
-  .svgDownArrowFlipped {
-    width: 15rem;
-    height: 15rem;
-    transform: rotate(-240deg) translate(15rem, 15rem) scaleX(1);
-    border: 1px solid red;
-  }
-} */
-@media (min-width: 1050px) {
-  .svgDownArrowFlipped {
-    width: 15rem;
-    height: 15rem;
-    transform: rotate(-260deg) translate(-5rem, -5rem) scaleX(-1);
-  }
-}
-@media (min-width: 1050px) {
-  .proExpBody,
-  .proExpBullet {
-    font-size: 1.25rem;
-  }
 }
 
 .circle:hover {
@@ -832,5 +566,157 @@
     padding: 0.75rem;
 
     font-size: 0.8rem;
+  }
+}
+
+/* ==== WORK EXPERIENCE SECTION */
+
+.workExpArrow {
+  height: 20rem;
+  width: 20rem;
+  transform: rotate(-50deg);
+  background-color: transparent;
+}
+
+.workExpArrowContainer {
+  padding: 0;
+  margin: 0;
+}
+
+.colorTextHead {
+  display: flex;
+
+  align-items: flex-end;
+}
+
+@media (max-width: 550px) {
+  .workExpArrow {
+    height: 15rem;
+    width: 15rem;
+
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 450px) {
+  .workExpArrow {
+    height: 10rem;
+    width: 10rem;
+    margin-top: 2rem;
+  }
+}
+
+/* ======= APP EXP SECTION ======== */
+.appExpArrow {
+  height: 20rem;
+  width: 20rem;
+  transform: rotate(-50deg);
+  background-color: transparent;
+}
+
+.appExpArrowContainer {
+  padding: 0;
+}
+
+@media (max-width: 1550px) {
+  .appExpArrow {
+    height: 20rem;
+    width: 20rem;
+    margin-top: 4rem;
+  }
+}
+@media (max-width: 1150px) {
+  .appExpArrow {
+    height: 20rem;
+    width: 20rem;
+    margin-top: 4rem;
+  }
+}
+@media (max-width: 950px) {
+  .appExpArrow {
+    height: 15rem;
+    width: 15rem;
+
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 750px) {
+  .appExpArrow {
+    height: 15rem;
+    width: 15rem;
+
+    margin-top: 10rem;
+  }
+}
+@media (max-width: 550px) {
+  .appExpArrow {
+    height: 15rem;
+    width: 15rem;
+    margin-top: 10rem;
+  }
+}
+@media (max-width: 450px) {
+  .appExpArrow {
+    height: 10rem;
+    width: 10rem;
+    margin-top: 6rem;
+  }
+}
+
+/* ======= PERSONAL LIFE SECTION ======== */
+
+.perLifeArrow {
+  height: 20rem;
+  width: 20rem;
+  transform: translate(-20rem, -2rem);
+  background-color: transparent;
+}
+
+.perLifeArrowContainer {
+  padding: 0;
+  margin-top: 0rem;
+}
+
+@media (max-width: 750px) {
+  .perLifeArrow {
+    height: 15rem;
+    width: 15rem;
+    transform: translate(-10rem, -2rem);
+  }
+}
+@media (max-width: 350px) {
+  .perLifeArrow {
+    height: 10rem;
+    width: 10rem;
+    transform: translate(0rem, -2rem);
+  }
+}
+/* ======= CONTACT SECTION ======== */
+
+.contArrow {
+  height: 20rem;
+  width: 20rem;
+  transform: translate(-22rem, -0rem) scaleX(-1) rotate(-90deg);
+  background-color: transparent;
+}
+
+.contArrowContainer {
+  padding: 0;
+  margin-top: 0rem;
+}
+
+@media (max-width: 750px) {
+  .contArrow {
+    height: 15rem;
+    width: 15rem;
+    transform: translate(-14rem, -0rem) scaleX(-1) rotate(-90deg);
+    border: 1px solid green;
+  }
+}
+@media (max-width: 450px) {
+  .contArrow {
+    height: 10rem;
+    width: 10rem;
+    transform: translate(-10rem, -0rem) scaleX(-1) rotate(-90deg);
+    border: 1px solid green;
   }
 }

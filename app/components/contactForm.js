@@ -7,7 +7,7 @@ import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 export default function ContactForm() {
   return (
     <main className={styles.main}>
-      <div className={styles.contactArrow}>
+      {/* <div className={styles.contactArrow}>
         <div className={styles.arrowDivider}>
           <Image
             className={styles.svgDownArrowFlipped}
@@ -15,8 +15,20 @@ export default function ContactForm() {
             src={svgDownArrow}
           ></Image>
         </div>
-      </div>
+      </div> */}
       <div className={styles.contactContainer}>
+        <div className={styles.twoColumnGrid}>
+          <div className={styles.colorTextHead}></div>
+          <div className={styles.colorTextHead}>
+            <div className={styles.contArrowContainer}>
+              <Image
+                src={svgDownArrow}
+                className={styles.contArrow}
+                alt="arrow pointing to next section"
+              ></Image>
+            </div>
+          </div>
+        </div>
         <div className={styles.twoColumnGrid}>
           <div className={styles.colorTextHead}>Get in touch</div>
         </div>

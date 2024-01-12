@@ -4,6 +4,7 @@ import styles from "./sectionStyle.module.css";
 import RadioButtonCheckedIcon from "@mui/icons-material/RadioButtonChecked";
 import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 import { useState } from "react";
+import svgDownArrow from "../../svg/paintedarrowcolor.svg";
 
 export default function WorkExp() {
   const [selected, setSelected] = useState("Cur");
@@ -16,9 +17,17 @@ export default function WorkExp() {
 
   return (
     <main className={styles.main}>
-      <div className={styles.dividerLine}></div>
       <div className={styles.twoColumnGrid}>
         <div className={styles.colorTextHead}>Legal Sector</div>
+        <div className={styles.colorTextHead}>
+          <div className={styles.workExpArrowContainer}>
+            <Image
+              src={svgDownArrow}
+              className={styles.workExpArrow}
+              alt="arrow pointing to next section"
+            ></Image>
+          </div>
+        </div>
       </div>
       <div className={styles.twoColumnGrid}>
         <div className={styles.headerText}>Professional Experience</div>

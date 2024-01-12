@@ -38,15 +38,19 @@ export default function WorkExp() {
 
   return (
     <main className={`${styles.main} ${styles.perLife}`}>
-      <div className={styles.dividerLine}></div>
-      <div className={styles.arrowDividerPerLife}>
-        <Image
-          className={styles.svgLoopDown}
-          alt="paintbrush mark"
-          src={svgDownArrow}
-        ></Image>
-      </div>
       <div className={styles.perLifeContainer}>
+        <div className={styles.twoColumnGrid}>
+          <div className={styles.colorTextHead}></div>
+          <div className={styles.colorTextHead}>
+            <div className={styles.perLifeArrowContainer}>
+              <Image
+                src={svgDownArrow}
+                className={styles.perLifeArrow}
+                alt="arrow pointing to next section"
+              ></Image>
+            </div>
+          </div>
+        </div>
         <div className={styles.twoColumnGrid}>
           <div className={styles.colorTextHead}>About me</div>
         </div>
