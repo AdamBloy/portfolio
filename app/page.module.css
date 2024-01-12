@@ -363,53 +363,60 @@
   z-index: 1;
   background-color: transparent;
   position: absolute;
-  width: 35%;
-  height: 60%;
+  width: 20rem;
+  height: 20rem;
   right: 20%;
   transform: rotate(-25deg) translate(0rem, 4rem);
 }
 
-@media (min-width: 2050) {
+@media (min-width: 2050px) {
+  .svgDownArrow {
+    width: 26rem;
+    height: 26rem;
+    transform: rotate(-25deg) translate(-22rem, 5rem);
+  }
+}
+@media (max-width: 2050px) {
+  .svgDownArrow {
+    width: 26rem;
+    height: 26rem;
+    transform: rotate(-25deg) translate(-10rem, 10rem);
+  }
+}
+
+@media (max-width: 1550px) {
+  .svgDownArrow {
+    width: 25rem;
+    height: 25rem;
+    right: 20%;
+    transform: rotate(-25deg) translate(-2rem, 20rem);
+  }
+}
+
+@media (max-width: 1050px) {
+  .svgDownArrow {
+    width: 20rem;
+    height: 20rem;
+    right: 20%;
+    transform: rotate(-25deg) translate(-5rem, 10rem);
+  }
+}
+
+@media (max-width: 850px) {
+  .svgDownArrow {
+    width: 16rem;
+    height: 16rem;
+    right: 20%;
+    transform: rotate(-25deg) translate(2rem, 10rem);
+  }
+}
+
+@media (max-width: 550px) {
   .svgDownArrow {
     width: 10rem;
     height: 10rem;
     right: 20%;
-    transform: rotate(-25deg) translate(-8rem, 4rem);
-    border: 1px solid pink;
-  }
-}
-
-@media (min-width: 1050px) {
-  .svgDownArrow {
-    width: 35%;
-    height: 40%;
-    right: 20%;
-    transform: rotate(-25deg) translate(-6rem, 12rem);
-  }
-}
-
-@media (min-width: 1550px) {
-  .svgDownArrow {
-    width: 25%;
-    height: 40%;
-    right: 20%;
-    transform: rotate(-25deg) translate(-8rem, 4rem);
-  }
-}
-@media (max-width: 850px) {
-  .svgDownArrow {
-    width: 35%;
-    height: 60%;
-    right: 20%;
-    transform: rotate(-25deg) translate(2rem, 2rem);
-  }
-}
-@media (max-width: 550px) {
-  .svgDownArrow {
-    width: 35%;
-    height: 38%;
-    right: 20%;
-    transform: rotate(-25deg) translate(2rem, 2rem);
+    transform: rotate(-25deg) translate(-2rem, 5rem);
   }
 }
 

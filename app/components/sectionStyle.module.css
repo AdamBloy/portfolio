@@ -539,6 +539,25 @@
   right: 20%;
   transform: rotate(5deg) translate(-12rem, -8rem) scaleX(-1);
 }
+
+@media (min-width: 1650px) {
+  .svgLoopDown {
+    border: 1px solid red;
+    transform: translate(21rem, -8rem);
+  }
+}
+@media (min-width: 1300px) {
+  .svgLoopDown {
+    /* border: 1px solid white; */
+    transform: translate(-1rem, -8rem);
+  }
+}
+@media (min-width: 750px) {
+  .svgLoopDown {
+    width: 20rem;
+    height: 30rem;
+  }
+}
 @media (max-width: 750px) {
   .arrowDivider {
     height: 20rem;
@@ -552,8 +571,13 @@
     background-color: transparent;
   }
   .svgLoopDown {
-    width: 30%;
-    height: 38%;
+    width: 10rem;
+    height: 20rem;
+  }
+}
+@media (min-width: 410px) {
+  .svgLoopDown {
+    transform: translate(-2rem, -12rem);
   }
 }
 @media (max-width: 375px) {
@@ -692,9 +716,19 @@
     transform: rotate(85deg) translate(0rem, -2rem) scaleX(-1);
   }
 }
+/* @media (min-width: 1550px) {
+  .svgDownArrowFlipped {
+    width: 15rem;
+    height: 15rem;
+    transform: rotate(-240deg) translate(15rem, 15rem) scaleX(1);
+    border: 1px solid red;
+  }
+} */
 @media (min-width: 1050px) {
   .svgDownArrowFlipped {
-    transform: rotate(310deg) translate(80rem, 30rem) scaleX(1);
+    width: 15rem;
+    height: 15rem;
+    transform: rotate(-260deg) translate(-5rem, -5rem) scaleX(-1);
   }
 }
 @media (min-width: 1050px) {
