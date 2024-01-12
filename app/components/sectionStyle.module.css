@@ -191,6 +191,17 @@
     margin-left: 0;
   }
 }
+@media (min-width: 1600px) {
+  .proExpHeader {
+    width: 60%;
+  }
+  .proExpBody {
+    width: 60%;
+  }
+  .proExpBullet li {
+    width: 60%;
+  }
+}
 .proExpBodyGrid {
   margin: 0.5rem;
 
@@ -213,6 +224,11 @@
   width: 95%;
 
   transition: all 0.5s;
+}
+@media (min-width: 950px) {
+  .photoItem {
+    max-height: 14rem;
+  }
 }
 /* .photoItem:hover {
   object-fit: cover;
@@ -247,6 +263,12 @@
 }
 .cardHidden {
   display: none;
+}
+@media (min-width: 950px) {
+  .card {
+    height: 19rem;
+    width: 51.5rem;
+  }
 }
 @media (max-width: 850px) {
   .card {
@@ -441,6 +463,12 @@
     height: 28rem;
   }
 }
+@media (min-width: 1400px) {
+  .cardContainer {
+    height: 28rem;
+    width: 100%;
+  }
+}
 @media (max-width: 375px) {
   .headerText {
     font-size: 3rem;
@@ -548,6 +576,12 @@
     background-color: transparent;
   }
 }
+/* @media (min-width: 1050) {
+  .arrowDividerAppExp {
+    transform: scale(50%);
+    border: 1px solid white;
+  }
+} */
 @media (max-width: 375px) {
   .appExpContainer {
     transform: translateY(-7rem);
@@ -608,13 +642,65 @@
 
 @media (max-width: 450px) {
   .svgDownArrow {
-    transform: scaleX(-1) rotate(-90deg) translate(4rem, 10rem);
+    transform: scaleX(-1) rotate(-90deg) translate(2rem, 1rem);
     background-color: transparent;
+    /* border: 5px solid pink; */
+  }
+}
+@media (max-width: 1050px) {
+  .svgDownArrow {
+    transform: rotate(-20deg) translate(2rem, -15rem);
+  }
+}
+@media (min-width: 1050px) {
+  .svgDownArrow {
+    transform: rotate(-20deg) translate(2rem, -8rem);
+  }
+}
+@media (min-width: 1550px) {
+  .svgDownArrow {
+    transform: rotate(-20deg) translate(-12rem, 12rem);
+
+    width: 20%;
+    height: 20%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .svgDownArrow {
+    transform: rotate(-15deg) translate(-10rem, -2rem);
+    width: 25rem;
+    height: 40rem;
+  }
+}
+@media (min-width: 2450px) {
+  .svgDownArrow {
+    transform: rotate(-20deg) translate(-10rem, -12rem);
+    width: 35rem;
+    height: 40rem;
+  }
+}
+@media (min-width: 3000px) {
+  .svgDownArrow {
+    transform: rotate(-20deg) translate(-20rem, -12rem);
+    width: 35rem;
+    height: 40rem;
   }
 }
 @media (max-width: 450px) {
   .svgDownArrowFlipped {
     transform: rotate(85deg) translate(0rem, -2rem) scaleX(-1);
+  }
+}
+@media (min-width: 1050px) {
+  .svgDownArrowFlipped {
+    transform: rotate(310deg) translate(80rem, 30rem) scaleX(1);
+  }
+}
+@media (min-width: 1050px) {
+  .proExpBody,
+  .proExpBullet {
+    font-size: 1.25rem;
   }
 }
 
