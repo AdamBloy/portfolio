@@ -709,7 +709,6 @@
     height: 15rem;
     width: 15rem;
     transform: translate(-14rem, -0rem) scaleX(-1) rotate(-90deg);
-    border: 1px solid green;
   }
 }
 @media (max-width: 450px) {
@@ -717,6 +716,5 @@
     height: 10rem;
     width: 10rem;
     transform: translate(-10rem, -0rem) scaleX(-1) rotate(-90deg);
-    border: 1px solid green;
   }
 }
