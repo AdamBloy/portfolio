@@ -114,6 +114,10 @@
   font-weight: 100;
   margin: 0.5rem;
   font-size: 1rem;
+  max-width: 25rem;
+}
+.proExpBullet li {
+  max-width: 25rem;
 }
 .proExpBodyHead {
   font-weight: 300;
@@ -122,6 +126,20 @@
   color: #e01a4f;
 }
 
+@media (min-width: 950px) {
+  .proExpHeader {
+    font-size: 1.75rem;
+    margin: 0.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .proExpBody {
+    font-size: 1rem;
+  }
+  .proExpBullet li {
+    font-size: 1rem;
+  }
+}
 @media (max-width: 850px) {
   .proExpHeader {
     font-size: 1.75rem;
@@ -175,7 +193,6 @@
   .proExpBody {
     font-size: 0.5rem;
     margin-left: 0;
-    width: 100%;
     padding-right: 0.5rem;
   }
 
@@ -185,7 +202,8 @@
     margin-left: 0;
   }
 }
-@media (min-width: 1600px) {
+
+/* @media (min-width: 1600px) {
   .proExpHeader {
     width: 60%;
   }
@@ -195,7 +213,7 @@
   .proExpBullet li {
     width: 60%;
   }
-}
+} */
 .proExpBodyGrid {
   margin: 0.5rem;
 
@@ -205,7 +223,7 @@
 }
 .bodyGrid3x3 {
   margin: 0.5rem;
-
+  max-width: 25rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -302,16 +320,18 @@
     height: 18rem;
   }
 }
-
-@media (max-width: 550px) {
+/* === */
+/* @media (max-width: 550px) {
   .card {
-    width: 80%;
+    width: 95%;
     height: 18rem;
+    border: 5px solid purple;
   }
-}
+} */
 @media (max-width: 450px) {
   .card {
     height: 20rem;
+    width: 20rem;
   }
 }
 
@@ -401,7 +421,7 @@
 }
 @media (max-width: 390px) {
   .card {
-    width: 75%;
+    width: 90%;
     height: 19rem;
   }
   .cardBody {
@@ -569,6 +589,16 @@
   }
 }
 
+/* ===== GLOBAL MEDIA QUERIES ===== */
+
+@media (max-width: 375px) {
+  .colorTextHead {
+    font-size: 0.75rem;
+  }
+  .headerText {
+    font-size: 3rem;
+  }
+}
 /* ==== WORK EXPERIENCE SECTION */
 
 .workExpArrow {
@@ -601,6 +631,13 @@
   .workExpArrow {
     height: 10rem;
     width: 10rem;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 375px) {
+  .workExpArrow {
+    height: 7.5rem;
+    width: 7.5rem;
     margin-top: 2rem;
   }
 }
@@ -651,14 +688,58 @@
   .appExpArrow {
     height: 15rem;
     width: 15rem;
-    margin-top: 10rem;
+    margin-top: 2rem;
+  }
+  .cardContainer {
+    height: 26rem;
+  }
+  .card {
+    max-width: 29rem;
+    display: flex;
+    flex-direction: column;
+    height: 21rem;
+    margin-left: 0.5rem;
+  }
+
+  .cardHeader {
+    font-size: 1rem;
+  }
+  .cardSubHead {
+    font-size: 0.75rem;
+  }
+  .cardBody {
+    font-size: 0.5rem;
+  }
+  .cardImgContainer {
+    margin: 0rem;
+    height: 35%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .cardBtn {
+    margin: 0rem;
+    font-size: 0.65rem;
+    padding: 0.25rem;
   }
 }
 @media (max-width: 450px) {
   .appExpArrow {
     height: 10rem;
     width: 10rem;
-    margin-top: 6rem;
+    margin-top: 1rem;
+  }
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  .appExpArrow {
+    height: 7.5rem;
+    width: 7.5rem;
+  }
+  .card {
+    width: 75%;
   }
 }
 
@@ -690,6 +771,14 @@
     transform: translate(0rem, -2rem);
   }
 }
+
+@media (max-width: 375px) {
+  .perLifeArrow {
+    height: 7.5rem;
+    width: 7.5rem;
+    margin-top: 2rem;
+  }
+}
 /* ======= CONTACT SECTION ======== */
 
 .contArrow {
@@ -716,5 +805,12 @@
     height: 10rem;
     width: 10rem;
     transform: translate(-10rem, -0rem) scaleX(-1) rotate(-90deg);
+  }
+}
+
+@media (max-width: 375px) {
+  .contArrow {
+    height: 7.5rem;
+    width: 7.5rem;
   }
 }

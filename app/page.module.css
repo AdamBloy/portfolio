@@ -330,6 +330,15 @@
     height: 12rem;
   }
 }
+@media (max-width: 375px) {
+  .svgPaintBrush1 {
+    width: 12rem;
+    height: 6rem;
+  }
+  .heroImgAdam {
+    transform: translate(2rem, 0rem) scaleX(-1);
+  }
+}
 @media (max-width: 550px) {
   .heroimg {
     width: 15rem;
@@ -346,16 +355,9 @@
 }
 @media (max-width: 375px) {
   .heroimg {
-    width: 10rem;
+    width: 12rem;
     height: 20rem;
     transform: translateX(-55%);
-  }
-}
-@media (max-width: 375px) {
-  .svgPaintBrush1,
-  .svgPaintBrush2 {
-    width: 10rem;
-    height: 10rem;
   }
 }
 
